@@ -43,31 +43,27 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_0TkTUONpEeiSXKLxC9IEwA" name="Requirement16">
       <nestedClassifier xmi:type="uml:Class" xmi:id="_6kIScONpEeiSXKLxC9IEwA" name="Capteur"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_fsOm8O5hEeiaI_ErTj3FdQ" name="Lire Indicateur de santé" classifierBehavior="_NCoZIO5iEeiaI_ErTj3FdQ">
-      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_NCoZIO5iEeiaI_ErTj3FdQ" name="Interaction1">
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_cjSBsPklEei5p_9RZgD3Rw" name="Majordome" coveredBy="_txyVEPklEei5p_9RZgD3Rw _txqZQPklEei5p_9RZgD3Rw _HKU_wPkoEei_jOv7V6KAjQ _v_aqQPklEei5p_9RZgD3Rw _v_YOAPklEei5p_9RZgD3Rw _YDzeUPkoEei_jOv7V6KAjQ _v_b4YPklEei5p_9RZgD3Rw"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_iVM9APklEei5p_9RZgD3Rw" name="Ecran d'affichage" coveredBy="_HKVm0PkoEei_jOv7V6KAjQ _YDy3QPkoEei_jOv7V6KAjQ _ur1igPklEei5p_9RZgD3Rw"/>
-        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_txyVEPklEei5p_9RZgD3Rw" name="ActionExecutionSpecification3Start" covered="_cjSBsPklEei5p_9RZgD3Rw" execution="_txqZQPklEei5p_9RZgD3Rw"/>
-        <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_txqZQPklEei5p_9RZgD3Rw" name="ActionExecutionSpecification3" covered="_cjSBsPklEei5p_9RZgD3Rw" finish="_HKU_wPkoEei_jOv7V6KAjQ" start="_txyVEPklEei5p_9RZgD3Rw"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HKU_wPkoEei_jOv7V6KAjQ" name="Message12SendEvent" covered="_cjSBsPklEei5p_9RZgD3Rw" message="_HKKnsPkoEei_jOv7V6KAjQ"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HKVm0PkoEei_jOv7V6KAjQ" name="Message12ReceiveEvent" covered="_iVM9APklEei5p_9RZgD3Rw" message="_HKKnsPkoEei_jOv7V6KAjQ"/>
-        <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_ur1igPklEei5p_9RZgD3Rw" name="ActionExecutionSpecification6" covered="_iVM9APklEei5p_9RZgD3Rw" finish="_YDy3QPkoEei_jOv7V6KAjQ" start="_HKVm0PkoEei_jOv7V6KAjQ"/>
-        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_v_aqQPklEei5p_9RZgD3Rw" name="ActionExecutionSpecification9Start" covered="_cjSBsPklEei5p_9RZgD3Rw" execution="_v_YOAPklEei5p_9RZgD3Rw"/>
-        <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_v_YOAPklEei5p_9RZgD3Rw" name="ActionExecutionSpecification9" covered="_cjSBsPklEei5p_9RZgD3Rw" finish="_v_b4YPklEei5p_9RZgD3Rw" start="_v_aqQPklEei5p_9RZgD3Rw"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_YDy3QPkoEei_jOv7V6KAjQ" name="Message13SendEvent" covered="_iVM9APklEei5p_9RZgD3Rw" message="_YDyQMPkoEei_jOv7V6KAjQ"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_YDzeUPkoEei_jOv7V6KAjQ" name="Message13ReceiveEvent" covered="_cjSBsPklEei5p_9RZgD3Rw" message="_YDyQMPkoEei_jOv7V6KAjQ"/>
-        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_v_b4YPklEei5p_9RZgD3Rw" name="ActionExecutionSpecification9Finish" covered="_cjSBsPklEei5p_9RZgD3Rw" execution="_v_YOAPklEei5p_9RZgD3Rw"/>
-        <message xmi:type="uml:Message" xmi:id="_HKKnsPkoEei_jOv7V6KAjQ" name="Appuie sur le bouton" messageSort="asynchCall" receiveEvent="_HKVm0PkoEei_jOv7V6KAjQ" sendEvent="_HKU_wPkoEei_jOv7V6KAjQ"/>
-        <message xmi:type="uml:Message" xmi:id="_YDyQMPkoEei_jOv7V6KAjQ" name="Affiche l'indicateur de santé" messageSort="reply" receiveEvent="_YDzeUPkoEei_jOv7V6KAjQ" sendEvent="_YDy3QPkoEei_jOv7V6KAjQ"/>
-      </ownedBehavior>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_fsOm8O5hEeiaI_ErTj3FdQ" name="Lire Indicateur de santé">
+      <include xmi:type="uml:Include" xmi:id="_edrIUBWhEemP3b-W7jeEsA" addition="_TqbdoBWgEemP3b-W7jeEsA"/>
+      <include xmi:type="uml:Include" xmi:id="_fqlAUBWhEemP3b-W7jeEsA" addition="_XoFmABWgEemP3b-W7jeEsA"/>
+      <include xmi:type="uml:Include" xmi:id="_gioCoBWhEemP3b-W7jeEsA" addition="_gcDWABWgEemP3b-W7jeEsA"/>
+      <include xmi:type="uml:Include" xmi:id="_hY2gABWhEemP3b-W7jeEsA" addition="_is1s4BWgEemP3b-W7jeEsA"/>
+      <include xmi:type="uml:Include" xmi:id="_iJNl8BWhEemP3b-W7jeEsA" addition="_H18tgBWhEemP3b-W7jeEsA"/>
+      <include xmi:type="uml:Include" xmi:id="_jE05oBWhEemP3b-W7jeEsA" addition="_ag8NABWhEemP3b-W7jeEsA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_iHhksO5hEeiaI_ErTj3FdQ" name="Majordome"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_4S728O5hEeiaI_ErTj3FdQ" memberEnd="_4S-TMO5hEeiaI_ErTj3FdQ _4S-6QO5hEeiaI_ErTj3FdQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4S9FEO5hEeiaI_ErTj3FdQ" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4S9sIO5hEeiaI_ErTj3FdQ" key="nature" value="UML_Nature"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_iHhksO5hEeiaI_ErTj3FdQ" name="Batman"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_TqbdoBWgEemP3b-W7jeEsA" name="Consulter la température"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_XoFmABWgEemP3b-W7jeEsA" name="Consulter l'humidité"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_gcDWABWgEemP3b-W7jeEsA" name="Consulter le niveau de CO2"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_is1s4BWgEemP3b-W7jeEsA" name="Consulter le niveau de COV"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_H18tgBWhEemP3b-W7jeEsA" name="Consulter le déplacement de l'air"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ag8NABWhEemP3b-W7jeEsA" name="Consulter la consommation électrique de la maison"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XKupsBWiEemP3b-W7jeEsA" memberEnd="_XKwe4BWiEemP3b-W7jeEsA _XKwe4RWiEemP3b-W7jeEsA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XKv30BWiEemP3b-W7jeEsA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XKv30RWiEemP3b-W7jeEsA" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_4S-TMO5hEeiaI_ErTj3FdQ" name="lire indicateur" type="_fsOm8O5hEeiaI_ErTj3FdQ" association="_4S728O5hEeiaI_ErTj3FdQ"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_4S-6QO5hEeiaI_ErTj3FdQ" name="majordome" type="_iHhksO5hEeiaI_ErTj3FdQ" association="_4S728O5hEeiaI_ErTj3FdQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_XKwe4BWiEemP3b-W7jeEsA" name="lire indicateur de santé" type="_fsOm8O5hEeiaI_ErTj3FdQ" association="_XKupsBWiEemP3b-W7jeEsA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_XKwe4RWiEemP3b-W7jeEsA" name="batman" type="_iHhksO5hEeiaI_ErTj3FdQ" association="_XKupsBWiEemP3b-W7jeEsA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UoYqEONgEeiSXKLxC9IEwA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UobtYONgEeiSXKLxC9IEwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
