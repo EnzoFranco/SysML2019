@@ -70,7 +70,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dkqRIBWrEemP3b-W7jeEsA" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_1Hp20BWqEemP3b-W7jeEsA" name="SousSystemeCapteurs">
+    <packagedElement xmi:type="uml:Class" xmi:id="_1Hp20BWqEemP3b-W7jeEsA" name="SousSystemeCapteurs" visibility="public">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_guHVYRWrEemP3b-W7jeEsA" name="capteurconsoelectrique" type="_MkBaoBWrEemP3b-W7jeEsA" aggregation="composite" association="_guFgMBWrEemP3b-W7jeEsA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_guHVYhWrEemP3b-W7jeEsA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_guH8cBWrEemP3b-W7jeEsA" value="1"/>
@@ -95,6 +95,37 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vTcnEhWrEemP3b-W7jeEsA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vTdOIBWrEemP3b-W7jeEsA" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_9aexIBaFEemjCMCbxe_5kw" name="logicielCapteur" type="__6lWYBaFEemjCMCbxe_5kw" aggregation="composite" association="__6t5QBaFEemjCMCbxe_5kw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_HYocUBaGEemjCMCbxe_5kw" name="capteurTemperature" type="_7DbRsBWqEemP3b-W7jeEsA" aggregation="composite" association="_Je_r4BaGEemjCMCbxe_5kw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_L8fpEBaGEemjCMCbxe_5kw" name="capteurHumidite" type="_8_UWoBWqEemP3b-W7jeEsA" aggregation="composite" association="_NtqEsBaGEemjCMCbxe_5kw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PqKNoBaGEemjCMCbxe_5kw" name="capteurCO2" type="__D0lABWqEemP3b-W7jeEsA" aggregation="composite" association="_RYR8UBaGEemjCMCbxe_5kw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TfwmMBaGEemjCMCbxe_5kw" name="capteurCOV" type="_AG1hMBWrEemP3b-W7jeEsA" aggregation="composite" association="_VK0Z0BaGEemjCMCbxe_5kw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_XhjnsBaGEemjCMCbxe_5kw" name="capteurAir" type="_HuIpwBWrEemP3b-W7jeEsA" aggregation="composite" association="_ZUp9ABaGEemjCMCbxe_5kw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_bjpkIBaGEemjCMCbxe_5kw" name="capteurConsoElectrique" type="_MkBaoBWrEemP3b-W7jeEsA" aggregation="composite" association="_c_Kf4BaGEemjCMCbxe_5kw"/>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_sAS8wBaGEemjCMCbxe_5kw" name="Connector14">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_sAWAEBaGEemjCMCbxe_5kw" role="_9aexIBaFEemjCMCbxe_5kw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_sAWAERaGEemjCMCbxe_5kw" role="_XhjnsBaGEemjCMCbxe_5kw"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_tI4VcBaGEemjCMCbxe_5kw" name="BindingConnector15">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_tI6xsBaGEemjCMCbxe_5kw" role="_9aexIBaFEemjCMCbxe_5kw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_tI6xsRaGEemjCMCbxe_5kw" role="_PqKNoBaGEemjCMCbxe_5kw"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_uNdX4BaGEemjCMCbxe_5kw" name="BindingConnector16">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_uNf0IBaGEemjCMCbxe_5kw" role="_HYocUBaGEemjCMCbxe_5kw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_uNf0IRaGEemjCMCbxe_5kw" role="_9aexIBaFEemjCMCbxe_5kw"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_vWcZMBaGEemjCMCbxe_5kw" name="BindingConnector17">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_vWeOYBaGEemjCMCbxe_5kw" role="_bjpkIBaGEemjCMCbxe_5kw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_vWeOYRaGEemjCMCbxe_5kw" role="_9aexIBaFEemjCMCbxe_5kw"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_wJN58BaGEemjCMCbxe_5kw" name="BindingConnector18">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_wJQWMBaGEemjCMCbxe_5kw" role="_L8fpEBaGEemjCMCbxe_5kw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_wJQWMRaGEemjCMCbxe_5kw" role="_9aexIBaFEemjCMCbxe_5kw"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_w2ZwEBaGEemjCMCbxe_5kw" name="BindingConnector19">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_w2blQBaGEemjCMCbxe_5kw" role="_TfwmMBaGEemjCMCbxe_5kw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_w2blQRaGEemjCMCbxe_5kw" role="_9aexIBaFEemjCMCbxe_5kw"/>
+      </ownedConnector>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_7DbRsBWqEemP3b-W7jeEsA" name="CapteurTemperature"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_8_UWoBWqEemP3b-W7jeEsA" name="CapteurHumidite"/>
@@ -143,6 +174,30 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vTcnEBWrEemP3b-W7jeEsA" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_vTdOIRWrEemP3b-W7jeEsA" name="soussystemecapteurs" type="_1Hp20BWqEemP3b-W7jeEsA" association="_vTbY8BWrEemP3b-W7jeEsA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_h9no0BaEEemjCMCbxe_5kw" name="LogicielSysteme"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="__6lWYBaFEemjCMCbxe_5kw" name="LogicielCapteur"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="__6t5QBaFEemjCMCbxe_5kw" memberEnd="_9aexIBaFEemjCMCbxe_5kw __6xjoBaFEemjCMCbxe_5kw">
+      <ownedEnd xmi:type="uml:Property" xmi:id="__6xjoBaFEemjCMCbxe_5kw" type="_1Hp20BWqEemP3b-W7jeEsA" association="__6t5QBaFEemjCMCbxe_5kw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EsV1MBaGEemjCMCbxe_5kw" name="HumiditeCapteur"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Je_r4BaGEemjCMCbxe_5kw" memberEnd="_HYocUBaGEemjCMCbxe_5kw _JfBhEBaGEemjCMCbxe_5kw">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_JfBhEBaGEemjCMCbxe_5kw" type="_1Hp20BWqEemP3b-W7jeEsA" association="_Je_r4BaGEemjCMCbxe_5kw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NtqEsBaGEemjCMCbxe_5kw" memberEnd="_L8fpEBaGEemjCMCbxe_5kw _NtrS0BaGEemjCMCbxe_5kw">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_NtrS0BaGEemjCMCbxe_5kw" type="_1Hp20BWqEemP3b-W7jeEsA" association="_NtqEsBaGEemjCMCbxe_5kw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_RYR8UBaGEemjCMCbxe_5kw" memberEnd="_PqKNoBaGEemjCMCbxe_5kw _RYTKcBaGEemjCMCbxe_5kw">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_RYTKcBaGEemjCMCbxe_5kw" type="_1Hp20BWqEemP3b-W7jeEsA" association="_RYR8UBaGEemjCMCbxe_5kw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_VK0Z0BaGEemjCMCbxe_5kw" memberEnd="_TfwmMBaGEemjCMCbxe_5kw _VK1n8BaGEemjCMCbxe_5kw">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_VK1n8BaGEemjCMCbxe_5kw" type="_1Hp20BWqEemP3b-W7jeEsA" association="_VK0Z0BaGEemjCMCbxe_5kw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ZUp9ABaGEemjCMCbxe_5kw" memberEnd="_XhjnsBaGEemjCMCbxe_5kw _ZUrLIBaGEemjCMCbxe_5kw">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ZUrLIBaGEemjCMCbxe_5kw" type="_1Hp20BWqEemP3b-W7jeEsA" association="_ZUp9ABaGEemjCMCbxe_5kw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_c_Kf4BaGEemjCMCbxe_5kw" memberEnd="_bjpkIBaGEemjCMCbxe_5kw _c_MVEBaGEemjCMCbxe_5kw">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_c_MVEBaGEemjCMCbxe_5kw" type="_1Hp20BWqEemP3b-W7jeEsA" association="_c_Kf4BaGEemjCMCbxe_5kw"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UoYqEONgEeiSXKLxC9IEwA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UobtYONgEeiSXKLxC9IEwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -224,4 +279,12 @@
   <Blocks:Block xmi:id="_AG39cBWrEemP3b-W7jeEsA" base_Class="_AG1hMBWrEemP3b-W7jeEsA"/>
   <Blocks:Block xmi:id="_HuLtEBWrEemP3b-W7jeEsA" base_Class="_HuIpwBWrEemP3b-W7jeEsA"/>
   <Blocks:Block xmi:id="_MkGTIBWrEemP3b-W7jeEsA" base_Class="_MkBaoBWrEemP3b-W7jeEsA"/>
+  <Blocks:Block xmi:id="_h9r6QBaEEemjCMCbxe_5kw" base_Class="_h9no0BaEEemjCMCbxe_5kw"/>
+  <Blocks:Block xmi:id="__6qO4BaFEemjCMCbxe_5kw" base_Class="__6lWYBaFEemjCMCbxe_5kw"/>
+  <Blocks:Block xmi:id="_EsY4gBaGEemjCMCbxe_5kw" base_Class="_EsV1MBaGEemjCMCbxe_5kw"/>
+  <Blocks:BindingConnector xmi:id="_tI7YwBaGEemjCMCbxe_5kw" base_Connector="_tI4VcBaGEemjCMCbxe_5kw"/>
+  <Blocks:BindingConnector xmi:id="_uNgbMBaGEemjCMCbxe_5kw" base_Connector="_uNdX4BaGEemjCMCbxe_5kw"/>
+  <Blocks:BindingConnector xmi:id="_vWe1cBaGEemjCMCbxe_5kw" base_Connector="_vWcZMBaGEemjCMCbxe_5kw"/>
+  <Blocks:BindingConnector xmi:id="_wJQWMhaGEemjCMCbxe_5kw" base_Connector="_wJN58BaGEemjCMCbxe_5kw"/>
+  <Blocks:BindingConnector xmi:id="_w2blQhaGEemjCMCbxe_5kw" base_Connector="_w2ZwEBaGEemjCMCbxe_5kw"/>
 </xmi:XMI>
