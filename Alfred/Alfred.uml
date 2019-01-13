@@ -7,7 +7,7 @@
     <packageImport xmi:type="uml:PackageImport" xmi:id="_UoszIONgEeiSXKLxC9IEwA">
       <importedPackage xmi:type="uml:Package" href="pathmap://SysML14_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Package" xmi:id="_LCLgoONnEeiSXKLxC9IEwA" name="InitialDesign">
+    <packagedElement xmi:type="uml:Package" xmi:id="_LCLgoONnEeiSXKLxC9IEwA" name="Context">
       <packagedElement xmi:type="uml:Class" xmi:id="_waONwONqEeiSXKLxC9IEwA" name="Context">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_DRnxkONrEeiSXKLxC9IEwA" name="capteur" type="_1V3oYONqEeiSXKLxC9IEwA" aggregation="composite" association="_DRhD4ONrEeiSXKLxC9IEwA">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DRoYoONrEeiSXKLxC9IEwA"/>
@@ -34,230 +34,168 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_cF15IONrEeiSXKLxC9IEwA" name="Indicateurs"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_fsOm8O5hEeiaI_ErTj3FdQ" name="Lire Indicateur de santé">
-      <include xmi:type="uml:Include" xmi:id="_edrIUBWhEemP3b-W7jeEsA" addition="_TqbdoBWgEemP3b-W7jeEsA"/>
-      <include xmi:type="uml:Include" xmi:id="_fqlAUBWhEemP3b-W7jeEsA" addition="_XoFmABWgEemP3b-W7jeEsA"/>
-      <include xmi:type="uml:Include" xmi:id="_gioCoBWhEemP3b-W7jeEsA" addition="_gcDWABWgEemP3b-W7jeEsA"/>
-      <include xmi:type="uml:Include" xmi:id="_hY2gABWhEemP3b-W7jeEsA" addition="_is1s4BWgEemP3b-W7jeEsA"/>
-      <include xmi:type="uml:Include" xmi:id="_iJNl8BWhEemP3b-W7jeEsA" addition="_H18tgBWhEemP3b-W7jeEsA"/>
-      <include xmi:type="uml:Include" xmi:id="_jE05oBWhEemP3b-W7jeEsA" addition="_ag8NABWhEemP3b-W7jeEsA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_iHhksO5hEeiaI_ErTj3FdQ" name="Batman"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_TqbdoBWgEemP3b-W7jeEsA" name="Consulter la température"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_XoFmABWgEemP3b-W7jeEsA" name="Consulter l'humidité"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_gcDWABWgEemP3b-W7jeEsA" name="Consulter le niveau de CO2"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_is1s4BWgEemP3b-W7jeEsA" name="Consulter le niveau de COV"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_H18tgBWhEemP3b-W7jeEsA" name="Consulter le déplacement de l'air"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_ag8NABWhEemP3b-W7jeEsA" name="Consulter la consommation électrique de la maison"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_XKupsBWiEemP3b-W7jeEsA" memberEnd="_XKwe4BWiEemP3b-W7jeEsA _XKwe4RWiEemP3b-W7jeEsA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XKv30BWiEemP3b-W7jeEsA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XKv30RWiEemP3b-W7jeEsA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_XKwe4BWiEemP3b-W7jeEsA" name="lire indicateur de santé" type="_fsOm8O5hEeiaI_ErTj3FdQ" association="_XKupsBWiEemP3b-W7jeEsA"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_XKwe4RWiEemP3b-W7jeEsA" name="batman" type="_iHhksO5hEeiaI_ErTj3FdQ" association="_XKupsBWiEemP3b-W7jeEsA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_jsMJsBWjEemP3b-W7jeEsA" name="AffichageSante">
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_bHK_MBWkEemP3b-W7jeEsA" name="AffichageHumidité"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_jCcMoBWkEemP3b-W7jeEsA" name="AffichageAir"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_pq-m4BWkEemP3b-W7jeEsA" name="AffichageConsoElectrique"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_17ucQBWjEemP3b-W7jeEsA" name="AffichageTemperature"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_NNjkABWkEemP3b-W7jeEsA" name="AffichageCO2"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_UReSsBWkEemP3b-W7jeEsA" name="AffichageCOV"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_MC6jkBWpEemP3b-W7jeEsA" name="Alfred">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="__RZv4BccEemE4oOekfsO6w" name="soussystemecapteurs" type="_1Hp20BWqEemP3b-W7jeEsA" aggregation="composite" association="__RSbIBccEemE4oOekfsO6w">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__Ra-ABccEemE4oOekfsO6w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__RblEBccEemE4oOekfsO6w" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_cfbJQRcdEemE4oOekfsO6w" name="ihm" type="_a9Fz0BcdEemE4oOekfsO6w" aggregation="composite" association="_cfYtABcdEemE4oOekfsO6w">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfbwUBcdEemE4oOekfsO6w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfcXYBcdEemE4oOekfsO6w" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_QX098BcgEemE4oOekfsO6w" name="bruce wayne" type="_WBrCsBcdEemE4oOekfsO6w" association="_QXzv0BcgEemE4oOekfsO6w">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QX098RcgEemE4oOekfsO6w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QX098hcgEemE4oOekfsO6w" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_1Hp20BWqEemP3b-W7jeEsA" name="SousSystemeCapteurs" visibility="public">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_guHVYRWrEemP3b-W7jeEsA" name="capteurconsoelectrique" type="_MkBaoBWrEemP3b-W7jeEsA" aggregation="composite" association="_guFgMBWrEemP3b-W7jeEsA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_guHVYhWrEemP3b-W7jeEsA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_guH8cBWrEemP3b-W7jeEsA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_igG3chWrEemP3b-W7jeEsA" name="capteurair" type="_HuIpwBWrEemP3b-W7jeEsA" aggregation="composite" association="_igGQYBWrEemP3b-W7jeEsA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_igG3cxWrEemP3b-W7jeEsA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_igG3dBWrEemP3b-W7jeEsA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_lvwqURWrEemP3b-W7jeEsA" name="capteurtemperature" type="_7DbRsBWqEemP3b-W7jeEsA" aggregation="composite" association="_lvvcMBWrEemP3b-W7jeEsA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lvwqUhWrEemP3b-W7jeEsA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lvxRYBWrEemP3b-W7jeEsA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_ocO3ohWrEemP3b-W7jeEsA" name="capteurhumidite" type="_8_UWoBWqEemP3b-W7jeEsA" aggregation="composite" association="_ocOQkBWrEemP3b-W7jeEsA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ocO3oxWrEemP3b-W7jeEsA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ocO3pBWrEemP3b-W7jeEsA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_q9DOkxWrEemP3b-W7jeEsA" name="capteurco2" type="__D0lABWqEemP3b-W7jeEsA" aggregation="composite" association="_q9DOkBWrEemP3b-W7jeEsA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q9D1oBWrEemP3b-W7jeEsA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q9D1oRWrEemP3b-W7jeEsA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_vTcnERWrEemP3b-W7jeEsA" name="capteurcov" type="_AG1hMBWrEemP3b-W7jeEsA" aggregation="composite" association="_vTbY8BWrEemP3b-W7jeEsA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vTcnEhWrEemP3b-W7jeEsA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vTdOIBWrEemP3b-W7jeEsA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_9aexIBaFEemjCMCbxe_5kw" name="logicielCapteur" type="__6lWYBaFEemjCMCbxe_5kw" aggregation="composite" association="__6t5QBaFEemjCMCbxe_5kw"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_HYocUBaGEemjCMCbxe_5kw" name="capteurTemperature" type="_7DbRsBWqEemP3b-W7jeEsA" aggregation="composite" association="_Je_r4BaGEemjCMCbxe_5kw"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_L8fpEBaGEemjCMCbxe_5kw" name="capteurHumidite" type="_8_UWoBWqEemP3b-W7jeEsA" aggregation="composite" association="_NtqEsBaGEemjCMCbxe_5kw"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_PqKNoBaGEemjCMCbxe_5kw" name="capteurCO2" type="__D0lABWqEemP3b-W7jeEsA" aggregation="composite" association="_RYR8UBaGEemjCMCbxe_5kw"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_TfwmMBaGEemjCMCbxe_5kw" name="capteurCOV" type="_AG1hMBWrEemP3b-W7jeEsA" aggregation="composite" association="_VK0Z0BaGEemjCMCbxe_5kw"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_XhjnsBaGEemjCMCbxe_5kw" name="capteurAir" type="_HuIpwBWrEemP3b-W7jeEsA" aggregation="composite" association="_ZUp9ABaGEemjCMCbxe_5kw"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_bjpkIBaGEemjCMCbxe_5kw" name="capteurConsoElectrique" type="_MkBaoBWrEemP3b-W7jeEsA" aggregation="composite" association="_c_Kf4BaGEemjCMCbxe_5kw"/>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_sAS8wBaGEemjCMCbxe_5kw" name="Connector14">
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_sAWAEBaGEemjCMCbxe_5kw" role="_9aexIBaFEemjCMCbxe_5kw"/>
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_sAWAERaGEemjCMCbxe_5kw" role="_XhjnsBaGEemjCMCbxe_5kw"/>
-      </ownedConnector>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_tI4VcBaGEemjCMCbxe_5kw" name="BindingConnector15">
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_tI6xsBaGEemjCMCbxe_5kw" role="_9aexIBaFEemjCMCbxe_5kw"/>
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_tI6xsRaGEemjCMCbxe_5kw" role="_PqKNoBaGEemjCMCbxe_5kw"/>
-      </ownedConnector>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_uNdX4BaGEemjCMCbxe_5kw" name="BindingConnector16">
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_uNf0IBaGEemjCMCbxe_5kw" role="_HYocUBaGEemjCMCbxe_5kw"/>
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_uNf0IRaGEemjCMCbxe_5kw" role="_9aexIBaFEemjCMCbxe_5kw"/>
-      </ownedConnector>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_vWcZMBaGEemjCMCbxe_5kw" name="BindingConnector17">
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_vWeOYBaGEemjCMCbxe_5kw" role="_bjpkIBaGEemjCMCbxe_5kw"/>
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_vWeOYRaGEemjCMCbxe_5kw" role="_9aexIBaFEemjCMCbxe_5kw"/>
-      </ownedConnector>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_wJN58BaGEemjCMCbxe_5kw" name="BindingConnector18">
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_wJQWMBaGEemjCMCbxe_5kw" role="_L8fpEBaGEemjCMCbxe_5kw"/>
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_wJQWMRaGEemjCMCbxe_5kw" role="_9aexIBaFEemjCMCbxe_5kw"/>
-      </ownedConnector>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_w2ZwEBaGEemjCMCbxe_5kw" name="BindingConnector19">
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_w2blQBaGEemjCMCbxe_5kw" role="_TfwmMBaGEemjCMCbxe_5kw"/>
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_w2blQRaGEemjCMCbxe_5kw" role="_9aexIBaFEemjCMCbxe_5kw"/>
-      </ownedConnector>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_7DbRsBWqEemP3b-W7jeEsA" name="CapteurTemperature" visibility="package">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_9_RuwBceEemE4oOekfsO6w" name="temperature" visibility="private">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
-      </ownedAttribute>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_8TwoIBceEemE4oOekfsO6w" name="getTemperature"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_8_UWoBWqEemP3b-W7jeEsA" name="CapteurHumidite">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5i7EBcfEemE4oOekfsO6w" name="humidite" visibility="private">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
-      </ownedAttribute>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_Et2fkBcfEemE4oOekfsO6w" name="getHumidite"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="__D0lABWqEemP3b-W7jeEsA" name="CapteurCO2">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_e-kaUBcfEemE4oOekfsO6w" name="co2" visibility="private">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
-      </ownedAttribute>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_dDIBUBcfEemE4oOekfsO6w" name="getCO2"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_AG1hMBWrEemP3b-W7jeEsA" name="CapteurCOV">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_h3ZooBcfEemE4oOekfsO6w" name="cov" visibility="private">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
-      </ownedAttribute>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_kYba8BcfEemE4oOekfsO6w" name="getCOV"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_HuIpwBWrEemP3b-W7jeEsA" name="CapteurAir">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_no6UQBcfEemE4oOekfsO6w" name="air" visibility="private">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
-      </ownedAttribute>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_muO0sBcfEemE4oOekfsO6w" name="getAir"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_MkBaoBWrEemP3b-W7jeEsA" name="CapteurConsoElectrique">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_sWbMQBcfEemE4oOekfsO6w" name="conso" visibility="private">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
-      </ownedAttribute>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_q6HmUBcfEemE4oOekfsO6w" name="getConsoElectrique"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_guFgMBWrEemP3b-W7jeEsA" memberEnd="_guHVYRWrEemP3b-W7jeEsA _guH8cRWrEemP3b-W7jeEsA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_guGuUBWrEemP3b-W7jeEsA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_guHVYBWrEemP3b-W7jeEsA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_guH8cRWrEemP3b-W7jeEsA" name="soussystemecapteurs" type="_1Hp20BWqEemP3b-W7jeEsA" association="_guFgMBWrEemP3b-W7jeEsA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_igGQYBWrEemP3b-W7jeEsA" memberEnd="_igG3chWrEemP3b-W7jeEsA _igG3dRWrEemP3b-W7jeEsA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_igG3cBWrEemP3b-W7jeEsA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_igG3cRWrEemP3b-W7jeEsA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_igG3dRWrEemP3b-W7jeEsA" name="soussystemecapteurs" type="_1Hp20BWqEemP3b-W7jeEsA" association="_igGQYBWrEemP3b-W7jeEsA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_lvvcMBWrEemP3b-W7jeEsA" memberEnd="_lvwqURWrEemP3b-W7jeEsA _lvxRYRWrEemP3b-W7jeEsA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lvwDQBWrEemP3b-W7jeEsA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lvwqUBWrEemP3b-W7jeEsA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_lvxRYRWrEemP3b-W7jeEsA" name="soussystemecapteurs" type="_1Hp20BWqEemP3b-W7jeEsA" association="_lvvcMBWrEemP3b-W7jeEsA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_ocOQkBWrEemP3b-W7jeEsA" memberEnd="_ocO3ohWrEemP3b-W7jeEsA _ocO3pRWrEemP3b-W7jeEsA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ocO3oBWrEemP3b-W7jeEsA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ocO3oRWrEemP3b-W7jeEsA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_ocO3pRWrEemP3b-W7jeEsA" name="soussystemecapteurs" type="_1Hp20BWqEemP3b-W7jeEsA" association="_ocOQkBWrEemP3b-W7jeEsA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_q9DOkBWrEemP3b-W7jeEsA" memberEnd="_q9DOkxWrEemP3b-W7jeEsA _q9D1ohWrEemP3b-W7jeEsA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q9DOkRWrEemP3b-W7jeEsA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q9DOkhWrEemP3b-W7jeEsA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_q9D1ohWrEemP3b-W7jeEsA" name="soussystemecapteurs" type="_1Hp20BWqEemP3b-W7jeEsA" association="_q9DOkBWrEemP3b-W7jeEsA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_vTbY8BWrEemP3b-W7jeEsA" memberEnd="_vTcnERWrEemP3b-W7jeEsA _vTdOIRWrEemP3b-W7jeEsA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vTcAABWrEemP3b-W7jeEsA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vTcnEBWrEemP3b-W7jeEsA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_vTdOIRWrEemP3b-W7jeEsA" name="soussystemecapteurs" type="_1Hp20BWqEemP3b-W7jeEsA" association="_vTbY8BWrEemP3b-W7jeEsA"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_h9no0BaEEemjCMCbxe_5kw" name="LogicielSysteme"/>
     <packagedElement xmi:type="uml:Class" xmi:id="__6lWYBaFEemjCMCbxe_5kw" name="LogicielCapteur"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="__6t5QBaFEemjCMCbxe_5kw" memberEnd="_9aexIBaFEemjCMCbxe_5kw __6xjoBaFEemjCMCbxe_5kw">
-      <ownedEnd xmi:type="uml:Property" xmi:id="__6xjoBaFEemjCMCbxe_5kw" type="_1Hp20BWqEemP3b-W7jeEsA" association="__6t5QBaFEemjCMCbxe_5kw"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_EsV1MBaGEemjCMCbxe_5kw" name="HumiditeCapteur"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_Je_r4BaGEemjCMCbxe_5kw" memberEnd="_HYocUBaGEemjCMCbxe_5kw _JfBhEBaGEemjCMCbxe_5kw">
-      <ownedEnd xmi:type="uml:Property" xmi:id="_JfBhEBaGEemjCMCbxe_5kw" type="_1Hp20BWqEemP3b-W7jeEsA" association="_Je_r4BaGEemjCMCbxe_5kw"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_1kJeQBdaEemUycHRQFfqUQ" name="UseCase">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_fsOm8O5hEeiaI_ErTj3FdQ" name="Lire Indicateur de santé">
+        <include xmi:type="uml:Include" xmi:id="_edrIUBWhEemP3b-W7jeEsA" addition="_TqbdoBWgEemP3b-W7jeEsA"/>
+        <include xmi:type="uml:Include" xmi:id="_fqlAUBWhEemP3b-W7jeEsA" addition="_XoFmABWgEemP3b-W7jeEsA"/>
+        <include xmi:type="uml:Include" xmi:id="_gioCoBWhEemP3b-W7jeEsA" addition="_gcDWABWgEemP3b-W7jeEsA"/>
+        <include xmi:type="uml:Include" xmi:id="_hY2gABWhEemP3b-W7jeEsA" addition="_is1s4BWgEemP3b-W7jeEsA"/>
+        <include xmi:type="uml:Include" xmi:id="_iJNl8BWhEemP3b-W7jeEsA" addition="_H18tgBWhEemP3b-W7jeEsA"/>
+        <include xmi:type="uml:Include" xmi:id="_jE05oBWhEemP3b-W7jeEsA" addition="_ag8NABWhEemP3b-W7jeEsA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_iHhksO5hEeiaI_ErTj3FdQ" name="Batman"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_TqbdoBWgEemP3b-W7jeEsA" name="Consulter la température"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_XoFmABWgEemP3b-W7jeEsA" name="Consulter l'humidité"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_gcDWABWgEemP3b-W7jeEsA" name="Consulter le niveau de CO2"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_is1s4BWgEemP3b-W7jeEsA" name="Consulter le niveau de COV"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_H18tgBWhEemP3b-W7jeEsA" name="Consulter le déplacement de l'air"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_ag8NABWhEemP3b-W7jeEsA" name="Consulter la consommation électrique de la maison"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_XKupsBWiEemP3b-W7jeEsA" memberEnd="_XKwe4BWiEemP3b-W7jeEsA _XKwe4RWiEemP3b-W7jeEsA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XKv30BWiEemP3b-W7jeEsA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XKv30RWiEemP3b-W7jeEsA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_XKwe4BWiEemP3b-W7jeEsA" name="lire indicateur de santé" type="_fsOm8O5hEeiaI_ErTj3FdQ" association="_XKupsBWiEemP3b-W7jeEsA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_XKwe4RWiEemP3b-W7jeEsA" name="batman" type="_iHhksO5hEeiaI_ErTj3FdQ" association="_XKupsBWiEemP3b-W7jeEsA"/>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_NtqEsBaGEemjCMCbxe_5kw" memberEnd="_L8fpEBaGEemjCMCbxe_5kw _NtrS0BaGEemjCMCbxe_5kw">
-      <ownedEnd xmi:type="uml:Property" xmi:id="_NtrS0BaGEemjCMCbxe_5kw" type="_1Hp20BWqEemP3b-W7jeEsA" association="_NtqEsBaGEemjCMCbxe_5kw"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_DAThYBdbEemUycHRQFfqUQ" name="InternalBlockDiagram">
+      <packagedElement xmi:type="uml:Class" xmi:id="_6l3ZwBdcEemUycHRQFfqUQ" name="SousSystemeCapteurs">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_AmffcBddEemUycHRQFfqUQ" name="logicielCapteur" type="__6lWYBaFEemjCMCbxe_5kw" aggregation="composite" association="_AmiiwBddEemUycHRQFfqUQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_COqXIBddEemUycHRQFfqUQ" name="capteurCOV" type="_AG1hMBWrEemP3b-W7jeEsA" aggregation="composite" association="_COszYBddEemUycHRQFfqUQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_D23EABddEemUycHRQFfqUQ" name="capteurHumidite" type="_8_UWoBWqEemP3b-W7jeEsA" aggregation="composite" association="_D245MBddEemUycHRQFfqUQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FSPc4BddEemUycHRQFfqUQ" name="capteurConsoElectrique" type="_MkBaoBWrEemP3b-W7jeEsA" aggregation="composite" association="_FSSgMBddEemUycHRQFfqUQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_GotgkBddEemUycHRQFfqUQ" name="capteurTemperature" type="_7DbRsBWqEemP3b-W7jeEsA" aggregation="composite" association="_GozAIBddEemUycHRQFfqUQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_IIOLgBddEemUycHRQFfqUQ" name="capteurCO2" type="__D0lABWqEemP3b-W7jeEsA" aggregation="composite" association="_IITrEBddEemUycHRQFfqUQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_JXFLUBddEemUycHRQFfqUQ" name="capteurAir" type="_HuIpwBWrEemP3b-W7jeEsA" aggregation="composite" association="_JXHnkBddEemUycHRQFfqUQ"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_Ok6iIBddEemUycHRQFfqUQ" name="Connector8">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_Ok8XUBddEemUycHRQFfqUQ" role="_AmffcBddEemUycHRQFfqUQ"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_Ok8XURddEemUycHRQFfqUQ" role="_JXFLUBddEemUycHRQFfqUQ"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_P4GoUBddEemUycHRQFfqUQ" name="Connector9">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_P4H2cBddEemUycHRQFfqUQ" role="_AmffcBddEemUycHRQFfqUQ"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_P4IdgBddEemUycHRQFfqUQ" role="_IIOLgBddEemUycHRQFfqUQ"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_QmR88BddEemUycHRQFfqUQ" name="Connector10">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_QmSkABddEemUycHRQFfqUQ" role="_AmffcBddEemUycHRQFfqUQ"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_QmSkARddEemUycHRQFfqUQ" role="_GotgkBddEemUycHRQFfqUQ"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_RQ184BddEemUycHRQFfqUQ" name="Connector11">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_RQ2j8BddEemUycHRQFfqUQ" role="_COqXIBddEemUycHRQFfqUQ"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_RQ2j8RddEemUycHRQFfqUQ" role="_AmffcBddEemUycHRQFfqUQ"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_R-WjIBddEemUycHRQFfqUQ" name="Connector12">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_R-XKMBddEemUycHRQFfqUQ" role="_D23EABddEemUycHRQFfqUQ"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_R-XKMRddEemUycHRQFfqUQ" role="_AmffcBddEemUycHRQFfqUQ"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_StT64BddEemUycHRQFfqUQ" name="Connector13">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_StUh8BddEemUycHRQFfqUQ" role="_FSPc4BddEemUycHRQFfqUQ"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_StUh8RddEemUycHRQFfqUQ" role="_AmffcBddEemUycHRQFfqUQ"/>
+        </ownedConnector>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_AmiiwBddEemUycHRQFfqUQ" memberEnd="_AmiiwRddEemUycHRQFfqUQ _AmffcBddEemUycHRQFfqUQ">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_AmiiwRddEemUycHRQFfqUQ" type="_6l3ZwBdcEemUycHRQFfqUQ" association="_AmiiwBddEemUycHRQFfqUQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_COszYBddEemUycHRQFfqUQ" memberEnd="_COszYRddEemUycHRQFfqUQ _COqXIBddEemUycHRQFfqUQ">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_COszYRddEemUycHRQFfqUQ" type="_6l3ZwBdcEemUycHRQFfqUQ" association="_COszYBddEemUycHRQFfqUQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_D245MBddEemUycHRQFfqUQ" memberEnd="_D245MRddEemUycHRQFfqUQ _D23EABddEemUycHRQFfqUQ">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_D245MRddEemUycHRQFfqUQ" type="_6l3ZwBdcEemUycHRQFfqUQ" association="_D245MBddEemUycHRQFfqUQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_FSSgMBddEemUycHRQFfqUQ" memberEnd="_FSSgMRddEemUycHRQFfqUQ _FSPc4BddEemUycHRQFfqUQ">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_FSSgMRddEemUycHRQFfqUQ" type="_6l3ZwBdcEemUycHRQFfqUQ" association="_FSSgMBddEemUycHRQFfqUQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_GozAIBddEemUycHRQFfqUQ" memberEnd="_GozAIRddEemUycHRQFfqUQ _GotgkBddEemUycHRQFfqUQ">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_GozAIRddEemUycHRQFfqUQ" type="_6l3ZwBdcEemUycHRQFfqUQ" association="_GozAIBddEemUycHRQFfqUQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_IITrEBddEemUycHRQFfqUQ" memberEnd="_IITrERddEemUycHRQFfqUQ _IIOLgBddEemUycHRQFfqUQ">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_IITrERddEemUycHRQFfqUQ" type="_6l3ZwBdcEemUycHRQFfqUQ" association="_IITrEBddEemUycHRQFfqUQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_JXHnkBddEemUycHRQFfqUQ" memberEnd="_JXHnkRddEemUycHRQFfqUQ _JXFLUBddEemUycHRQFfqUQ">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_JXHnkRddEemUycHRQFfqUQ" type="_6l3ZwBdcEemUycHRQFfqUQ" association="_JXHnkBddEemUycHRQFfqUQ"/>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_RYR8UBaGEemjCMCbxe_5kw" memberEnd="_PqKNoBaGEemjCMCbxe_5kw _RYTKcBaGEemjCMCbxe_5kw">
-      <ownedEnd xmi:type="uml:Property" xmi:id="_RYTKcBaGEemjCMCbxe_5kw" type="_1Hp20BWqEemP3b-W7jeEsA" association="_RYR8UBaGEemjCMCbxe_5kw"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_HcpJ0BdbEemUycHRQFfqUQ" name="BlockDiag">
+      <packagedElement xmi:type="uml:Class" xmi:id="_MC6jkBWpEemP3b-W7jeEsA" name="Alfred">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_cfbJQRcdEemE4oOekfsO6w" name="ihm" type="_a9Fz0BcdEemE4oOekfsO6w" aggregation="composite" association="_cfYtABcdEemE4oOekfsO6w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfbwUBcdEemE4oOekfsO6w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfcXYBcdEemE4oOekfsO6w" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_QX098BcgEemE4oOekfsO6w" name="bruce wayne" type="_WBrCsBcdEemE4oOekfsO6w" association="_QXzv0BcgEemE4oOekfsO6w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QX098RcgEemE4oOekfsO6w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QX098hcgEemE4oOekfsO6w" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7DbRsBWqEemP3b-W7jeEsA" name="CapteurTemperature" visibility="package">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_9_RuwBceEemE4oOekfsO6w" name="temperature" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_8TwoIBceEemE4oOekfsO6w" name="getTemperature"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_8_UWoBWqEemP3b-W7jeEsA" name="CapteurHumidite">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_G5i7EBcfEemE4oOekfsO6w" name="humidite" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_Et2fkBcfEemE4oOekfsO6w" name="getHumidite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="__D0lABWqEemP3b-W7jeEsA" name="CapteurCO2">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_e-kaUBcfEemE4oOekfsO6w" name="co2" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_dDIBUBcfEemE4oOekfsO6w" name="getCO2"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_AG1hMBWrEemP3b-W7jeEsA" name="CapteurCOV">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_h3ZooBcfEemE4oOekfsO6w" name="cov" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_kYba8BcfEemE4oOekfsO6w" name="getCOV"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HuIpwBWrEemP3b-W7jeEsA" name="CapteurAir">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_no6UQBcfEemE4oOekfsO6w" name="air" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_muO0sBcfEemE4oOekfsO6w" name="getAir"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MkBaoBWrEemP3b-W7jeEsA" name="CapteurConsoElectrique">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_sWbMQBcfEemE4oOekfsO6w" name="conso" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_q6HmUBcfEemE4oOekfsO6w" name="getConsoElectrique"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_WBrCsBcdEemE4oOekfsO6w" name="Bruce Wayne"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_a9Fz0BcdEemE4oOekfsO6w" name="IHM">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_5f_DgBcfEemE4oOekfsO6w" name="afficherTemperature"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_7lSjIBcfEemE4oOekfsO6w" name="afficherHumidite"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_84VfYBcfEemE4oOekfsO6w" name="afficherCO2"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_-LmeEBcfEemE4oOekfsO6w" name="afficherCOV"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_-5ZYMBcfEemE4oOekfsO6w" name="afficherAir"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="__4jvIBcfEemE4oOekfsO6w" name="afficherConsoElectrique"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_SoFJUBcgEemE4oOekfsO6w" name="afficherSante"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_cfYtABcdEemE4oOekfsO6w" memberEnd="_cfbJQRcdEemE4oOekfsO6w _cfcXYRcdEemE4oOekfsO6w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cfaiMBcdEemE4oOekfsO6w" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cfbJQBcdEemE4oOekfsO6w" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_cfcXYRcdEemE4oOekfsO6w" name="alfred" type="_MC6jkBWpEemP3b-W7jeEsA" association="_cfYtABcdEemE4oOekfsO6w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_QXzv0BcgEemE4oOekfsO6w" memberEnd="_QX098BcgEemE4oOekfsO6w _QX098xcgEemE4oOekfsO6w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QX0W4BcgEemE4oOekfsO6w" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QX0W4RcgEemE4oOekfsO6w" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_QX098xcgEemE4oOekfsO6w" name="alfred" type="_MC6jkBWpEemP3b-W7jeEsA" association="_QXzv0BcgEemE4oOekfsO6w"/>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_VK0Z0BaGEemjCMCbxe_5kw" memberEnd="_TfwmMBaGEemjCMCbxe_5kw _VK1n8BaGEemjCMCbxe_5kw">
-      <ownedEnd xmi:type="uml:Property" xmi:id="_VK1n8BaGEemjCMCbxe_5kw" type="_1Hp20BWqEemP3b-W7jeEsA" association="_VK0Z0BaGEemjCMCbxe_5kw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_ZUp9ABaGEemjCMCbxe_5kw" memberEnd="_XhjnsBaGEemjCMCbxe_5kw _ZUrLIBaGEemjCMCbxe_5kw">
-      <ownedEnd xmi:type="uml:Property" xmi:id="_ZUrLIBaGEemjCMCbxe_5kw" type="_1Hp20BWqEemP3b-W7jeEsA" association="_ZUp9ABaGEemjCMCbxe_5kw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_c_Kf4BaGEemjCMCbxe_5kw" memberEnd="_bjpkIBaGEemjCMCbxe_5kw _c_MVEBaGEemjCMCbxe_5kw">
-      <ownedEnd xmi:type="uml:Property" xmi:id="_c_MVEBaGEemjCMCbxe_5kw" type="_1Hp20BWqEemP3b-W7jeEsA" association="_c_Kf4BaGEemjCMCbxe_5kw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="__RSbIBccEemE4oOekfsO6w" memberEnd="__RZv4BccEemE4oOekfsO6w __RcMIBccEemE4oOekfsO6w">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__RX6sBccEemE4oOekfsO6w" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__RYhwBccEemE4oOekfsO6w" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="__RcMIBccEemE4oOekfsO6w" name="alfred" type="_MC6jkBWpEemP3b-W7jeEsA" association="__RSbIBccEemE4oOekfsO6w"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_WBrCsBcdEemE4oOekfsO6w" name="Bruce Wayne"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_a9Fz0BcdEemE4oOekfsO6w" name="IHM">
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_5f_DgBcfEemE4oOekfsO6w" name="afficherTemperature"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_7lSjIBcfEemE4oOekfsO6w" name="afficherHumidite"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_84VfYBcfEemE4oOekfsO6w" name="afficherCO2"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_-LmeEBcfEemE4oOekfsO6w" name="afficherCOV"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_-5ZYMBcfEemE4oOekfsO6w" name="afficherAir"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="__4jvIBcfEemE4oOekfsO6w" name="afficherConsoElectrique"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_SoFJUBcgEemE4oOekfsO6w" name="afficherSante"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_cfYtABcdEemE4oOekfsO6w" memberEnd="_cfbJQRcdEemE4oOekfsO6w _cfcXYRcdEemE4oOekfsO6w">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cfaiMBcdEemE4oOekfsO6w" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cfbJQBcdEemE4oOekfsO6w" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_cfcXYRcdEemE4oOekfsO6w" name="alfred" type="_MC6jkBWpEemP3b-W7jeEsA" association="_cfYtABcdEemE4oOekfsO6w"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_QXzv0BcgEemE4oOekfsO6w" memberEnd="_QX098BcgEemE4oOekfsO6w _QX098xcgEemE4oOekfsO6w">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QX0W4BcgEemE4oOekfsO6w" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QX0W4RcgEemE4oOekfsO6w" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_QX098xcgEemE4oOekfsO6w" name="alfred" type="_MC6jkBWpEemP3b-W7jeEsA" association="_QXzv0BcgEemE4oOekfsO6w"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_OUYdsBdbEemUycHRQFfqUQ" name="ReqDiagram">
+      <packagedElement xmi:type="uml:Class" xmi:id="_jsMJsBWjEemP3b-W7jeEsA" name="AffichageSante">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_bHK_MBWkEemP3b-W7jeEsA" name="AffichageHumidité"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_jCcMoBWkEemP3b-W7jeEsA" name="AffichageAir"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_pq-m4BWkEemP3b-W7jeEsA" name="AffichageConsoElectrique"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_17ucQBWjEemP3b-W7jeEsA" name="AffichageTemperature"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_NNjkABWkEemP3b-W7jeEsA" name="AffichageCO2"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_UReSsBWkEemP3b-W7jeEsA" name="AffichageCOV"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UoYqEONgEeiSXKLxC9IEwA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UobtYONgEeiSXKLxC9IEwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -332,7 +270,6 @@
   <Requirements:Requirement xmi:id="_jCfP8BWkEemP3b-W7jeEsA" base_Class="_jCcMoBWkEemP3b-W7jeEsA" id="affichageAir" text="Alfred doit pouvoir afficher le déplacement de l'air dans la maison&#xA;"/>
   <Requirements:Requirement xmi:id="_prEtgBWkEemP3b-W7jeEsA" base_Class="_pq-m4BWkEemP3b-W7jeEsA" id="affichageConsoElec" text="Alfred doit pouvoir afficher la consommation électrique de la maison&#xA;"/>
   <Blocks:Block xmi:id="_MC9m4BWpEemP3b-W7jeEsA" base_Class="_MC6jkBWpEemP3b-W7jeEsA"/>
-  <Blocks:Block xmi:id="_1Hv9cBWqEemP3b-W7jeEsA" base_Class="_1Hp20BWqEemP3b-W7jeEsA"/>
   <Blocks:Block xmi:id="_7De8EBWqEemP3b-W7jeEsA" base_Class="_7DbRsBWqEemP3b-W7jeEsA"/>
   <Blocks:Block xmi:id="_8_Wy4BWqEemP3b-W7jeEsA" base_Class="_8_UWoBWqEemP3b-W7jeEsA"/>
   <Blocks:Block xmi:id="__D3oUBWqEemP3b-W7jeEsA" base_Class="__D0lABWqEemP3b-W7jeEsA"/>
@@ -342,10 +279,6 @@
   <Blocks:Block xmi:id="_h9r6QBaEEemjCMCbxe_5kw" base_Class="_h9no0BaEEemjCMCbxe_5kw"/>
   <Blocks:Block xmi:id="__6qO4BaFEemjCMCbxe_5kw" base_Class="__6lWYBaFEemjCMCbxe_5kw"/>
   <Blocks:Block xmi:id="_EsY4gBaGEemjCMCbxe_5kw" base_Class="_EsV1MBaGEemjCMCbxe_5kw"/>
-  <Blocks:BindingConnector xmi:id="_tI7YwBaGEemjCMCbxe_5kw" base_Connector="_tI4VcBaGEemjCMCbxe_5kw"/>
-  <Blocks:BindingConnector xmi:id="_uNgbMBaGEemjCMCbxe_5kw" base_Connector="_uNdX4BaGEemjCMCbxe_5kw"/>
-  <Blocks:BindingConnector xmi:id="_vWe1cBaGEemjCMCbxe_5kw" base_Connector="_vWcZMBaGEemjCMCbxe_5kw"/>
-  <Blocks:BindingConnector xmi:id="_wJQWMhaGEemjCMCbxe_5kw" base_Connector="_wJN58BaGEemjCMCbxe_5kw"/>
-  <Blocks:BindingConnector xmi:id="_w2blQhaGEemjCMCbxe_5kw" base_Connector="_w2ZwEBaGEemjCMCbxe_5kw"/>
   <Blocks:Block xmi:id="_a9MhgBcdEemE4oOekfsO6w" base_Class="_a9Fz0BcdEemE4oOekfsO6w"/>
+  <Blocks:Block xmi:id="_6l8SQBdcEemUycHRQFfqUQ" base_Class="_6l3ZwBdcEemUycHRQFfqUQ"/>
 </xmi:XMI>
