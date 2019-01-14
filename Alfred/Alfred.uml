@@ -60,6 +60,52 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_XKwe4BWiEemP3b-W7jeEsA" name="lire indicateur de santé" type="_fsOm8O5hEeiaI_ErTj3FdQ" association="_XKupsBWiEemP3b-W7jeEsA"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_XKwe4RWiEemP3b-W7jeEsA" name="batman" type="_iHhksO5hEeiaI_ErTj3FdQ" association="_XKupsBWiEemP3b-W7jeEsA"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_dEHUkBg3EemUycHRQFfqUQ" name="Thermomètre"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_eIdtgBg3EemUycHRQFfqUQ" name="Compteur électrique"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_1jZt8Bg3EemUycHRQFfqUQ" name="Hygromètre"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_XSUfoBg4EemUycHRQFfqUQ" memberEnd="_XSVGshg4EemUycHRQFfqUQ _XSVtwBg4EemUycHRQFfqUQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XSVGsBg4EemUycHRQFfqUQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XSVGsRg4EemUycHRQFfqUQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_XSVGshg4EemUycHRQFfqUQ" name="thermomètre" type="_dEHUkBg3EemUycHRQFfqUQ" association="_XSUfoBg4EemUycHRQFfqUQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_XSVtwBg4EemUycHRQFfqUQ" name="consulter la température" type="_TqbdoBWgEemP3b-W7jeEsA" association="_XSUfoBg4EemUycHRQFfqUQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_bDaLoBg4EemUycHRQFfqUQ" memberEnd="_bDaLoxg4EemUycHRQFfqUQ _bDaLpBg4EemUycHRQFfqUQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bDaLoRg4EemUycHRQFfqUQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bDaLohg4EemUycHRQFfqUQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bDaLoxg4EemUycHRQFfqUQ" name="hygromètre" type="_1jZt8Bg3EemUycHRQFfqUQ" association="_bDaLoBg4EemUycHRQFfqUQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bDaLpBg4EemUycHRQFfqUQ" name="consulter l'humidité" type="_XoFmABWgEemP3b-W7jeEsA" association="_bDaLoBg4EemUycHRQFfqUQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_gglmABg4EemUycHRQFfqUQ" memberEnd="_ggmNEhg4EemUycHRQFfqUQ _ggm0IBg4EemUycHRQFfqUQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ggmNEBg4EemUycHRQFfqUQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ggmNERg4EemUycHRQFfqUQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ggmNEhg4EemUycHRQFfqUQ" name="consulter la consommation électrique de la maison" type="_ag8NABWhEemP3b-W7jeEsA" association="_gglmABg4EemUycHRQFfqUQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ggm0IBg4EemUycHRQFfqUQ" name="compteur électrique" type="_eIdtgBg3EemUycHRQFfqUQ" association="_gglmABg4EemUycHRQFfqUQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_i5uAkBg4EemUycHRQFfqUQ" name="Capteur"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_p33ecBg4EemUycHRQFfqUQ" memberEnd="_p34skRg4EemUycHRQFfqUQ _p34skhg4EemUycHRQFfqUQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_p34FgBg4EemUycHRQFfqUQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_p34skBg4EemUycHRQFfqUQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_p34skRg4EemUycHRQFfqUQ" name="consulter le déplacement de l'air" type="_H18tgBWhEemP3b-W7jeEsA" association="_p33ecBg4EemUycHRQFfqUQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_p34skhg4EemUycHRQFfqUQ" name="capteur" type="_i5uAkBg4EemUycHRQFfqUQ" association="_p33ecBg4EemUycHRQFfqUQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_qsjDsBg4EemUycHRQFfqUQ" memberEnd="_qsjqwRg4EemUycHRQFfqUQ _qsjqwhg4EemUycHRQFfqUQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qsjDsRg4EemUycHRQFfqUQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qsjqwBg4EemUycHRQFfqUQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_qsjqwRg4EemUycHRQFfqUQ" name="consulter le niveau de cov" type="_is1s4BWgEemP3b-W7jeEsA" association="_qsjDsBg4EemUycHRQFfqUQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_qsjqwhg4EemUycHRQFfqUQ" name="capteur" type="_i5uAkBg4EemUycHRQFfqUQ" association="_qsjDsBg4EemUycHRQFfqUQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_rXAV8Bg4EemUycHRQFfqUQ" memberEnd="_rXA9Ahg4EemUycHRQFfqUQ _rXBkEBg4EemUycHRQFfqUQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rXA9ABg4EemUycHRQFfqUQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rXA9ARg4EemUycHRQFfqUQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_rXA9Ahg4EemUycHRQFfqUQ" name="consulter le niveau de co2" type="_gcDWABWgEemP3b-W7jeEsA" association="_rXAV8Bg4EemUycHRQFfqUQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_rXBkEBg4EemUycHRQFfqUQ" name="capteur" type="_i5uAkBg4EemUycHRQFfqUQ" association="_rXAV8Bg4EemUycHRQFfqUQ"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_DAThYBdbEemUycHRQFfqUQ" name="InternalBlockDiagram">
       <packagedElement xmi:type="uml:Class" xmi:id="_6l3ZwBdcEemUycHRQFfqUQ" name="SousSystemeCapteurs">
